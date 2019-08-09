@@ -56,6 +56,10 @@ map <leader>l <C-w>l
 map <leader>k <C-w>k
 map <leader>h <C-w>h
 map <leader>j <C-w>j
+nnoremap <S-Tab> <<
+nnoremap <Tab> >>
+vnoremap <S-Tab> <
+vnoremap <Tab> >
  " airline
 let g:airline_theme="onedark"
 let g:airline_powerline_fonts = 1
