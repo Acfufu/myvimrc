@@ -3,6 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
+Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
+Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'ncm2/ncm2-jedi'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-bufword'
@@ -38,7 +40,7 @@ set backspace=2
 set mouse=a 
 set selection=exclusive 
 set background=dark
-let mapleader=";"
+let mapleader=" "
 set selectmode=mouse,key 
 set matchtime=5 
 set ignorecase 
