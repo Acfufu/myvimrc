@@ -1,0 +1,61 @@
+xftfont Droid Sans:size=9
+default_color white
+background yes
+double_buffer yes
+no_buffers yes
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_type dock
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour 000000
+own_window_argb_visual yes
+own_window_argb_value 0
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+minimum_size 296 5
+maximum_width 406
+alignment top_right
+gap_x -20
+gap_y 80
+cpu_avg_samples 2
+override_utf8_locale no
+uppercase no # set to yes if you want all text to be in uppercase
+use_spacer no
+use_xft yes
+override_utf8_locale yes
+use_spacer no
+minimum_size 296 5
+color0 00d9ff
+color1 ffffff
+color2 c5c5c5
+color3 ff8400
+
+TEXT
+${goto 210}${color0}${font Zekton:style=bold:size=13}${voffset 40}${exec whoami}
+${voffset -45}${font Zekton:style=Bold:size=12}${color}${goto 90}${uptime}
+${goto 90}${color1}${font Zekton:style=Bold:size=12}${color1}${sysname}${color}${font}
+${font Consola:size=12}${offset 50}${voffset 45}${time %Y年%b%d日 星期%a} ${goto 248}${font Zekton:style=bold:size=11}${acpitemp} 
+${goto 248}${font Zekton:style=bold:size=11}°C
+${voffset -11}${goto 65}${color3}${font Zekton:style=bold:size=30}${time %H:%M}${font}${color1}${goto 220}${font Zekton:style=Bold:size=11}CPU
+${goto 220}${font Zekton:style=Bold:size=11}${color1}${cpu cpu1}%
+${voffset 30}${goto 82}/home 
+${goto 82}${font Zekton:style=Bold:size=10}${fs_used /home}
+${voffset 35}${goto 25}${font Zekton:style=Bold:size=10}Download${goto 113}Upload${font Zekton:style=Bold:size=11}${color1}${goto 217}RAM
+${goto 30}${font Zekton:style=Bold:size=9}${downspeed wlp2s0} k/s${goto 115}${upspeed wlp2s0} k/s ${goto 220}${font Zekton:style=Bold:size=11}${memperc}%
+${voffset 16}${font Zekton:style=Bold:size=11}${goto 83}ROOT${goto 175}SWAP
+${font Zekton:style=Bold:size=9}${goto 83}${fs_used /}${goto 175}${swapperc}%
+${font Zekton:style=Bold:size=10}${voffset 40}CPU:
+${font Zekton:style=Bold:size=10}${goto 50}${top name 1}${goto 220} ${top cpu 1}
+${font Zekton:style=Bold:size=10}${goto 40}${top name 2}${goto 220}${top cpu 2}
+
+
+${image ~/.conky/victorConky/ArchLarge.png -p 10,0}
+
+
+
+
