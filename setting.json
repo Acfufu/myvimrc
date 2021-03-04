@@ -1,0 +1,64 @@
+{
+    "workbench.colorTheme": "Eva Light Bold",
+    "editor.fontSize": 17,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+           "<C-a>": false,
+           "<C-f>": false,
+           "<C-n>": false
+    },
+    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3",
+    "tabnine.experimentalAutoImports": true,
+    "editor.fontFamily": "Monaco,'Meslo LG M for Powerline'",
+    "terminal.integrated.fontSize": 14,
+    "vim.commandLineModeKeyBindings": [
+    
+    ],
+    "vim.normalModeKeyBindings":[
+        {
+            "before": ["J"],
+        "after":["5","j"]
+        },
+        {
+            "before": ["K"],
+        "after":["5","k"]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // 调整缩进
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ],
+}
